@@ -11,9 +11,26 @@ public class Siakadfor02 {
         for (int i = 1; i <= 10; i++) {
             System.out.print("Masukkan nilai mahasiswa ke- " + i + " : ");
             nilai02 = agung.nextDouble();
+
+             if (nilai02 > tertinggi02) {
+             tertinggi02 = nilai02;
+             }
+
+             if (nilai02 < terendah02) {
+                terendah02 = nilai02;
+             }
+
+             if (nilai02 > 60) {
+                clulus02++;
+             } else {
+                cTidakLulus02++;
+             }
+
         }
 
         System.out.println("Nilai Tertinggi : " + tertinggi02);
         System.out.println("Nilai Terendah : " + terendah02);
+        System.out.println("Jumlah Lulus : " + clulus02);
+        System.out.println("Jumlah Tidak Lulus : " + cTidakLulus02);
     }
 }
